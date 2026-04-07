@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Overcan Engineering Solutions Ltd</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f6f9;
+}
+
+/* HEADER */
+header {
+    background: #0a2a66;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* HERO */
+.hero {
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1581092160562-40aa08e78837');
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    animation: fadeIn 2s ease-in;
+}
+
+.hero h1 {
+    font-size: 45px;
+}
+
+.hero p {
+    margin: 10px 0;
+}
+
+.btn {
+    background: #ff9900;
+    padding: 12px 25px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* SECTIONS */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* SERVICES */
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box {
+    background: white;
+    margin: 15px;
+    padding: 25px;
+    width: 260px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.box:hover {
+    transform: translateY(-10px);
+}
+
+/* GALLERY */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 300px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+/* CONTACT */
+.contact {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/* FOOTER */
+footer {
+    background: #0a2a66;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* WHATSAPP BUTTON */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h2>OVERCAN</h2>
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Engineering Excellence</h1>
+    <p>Electrical • Solar • Automation</p>
+    <a href="#contact" class="btn">Get a Quote</a>
+</section>
+
+<section id="services" class="section">
+    <h2>Our Services</h2>
+    <div class="services">
+        <div class="box">
+            <h3>Electrical Installation</h3>
+            <p>Professional wiring and maintenance</p>
+        </div>
+
+        <div class="box">
+            <h3>Solar Systems</h3>
+            <p>Reliable backup power solutions</p>
+        </div>
+
+        <div class="box">
+            <h3>Automatic Doors</h3>
+            <p>Smart access systems installation</p>
+        </div>
+
+        <div class="box">
+            <h3>Fire Systems</h3>
+            <p>Safety and alarm installations</p>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="section">
+    <h2>Our Projects</h2>
+    <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1581090700227-1e8e5f8e7c84">
+        <img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df">
+        <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231">
+    </div>
+</section>
+
+<section class="section">
+    <h2>Company Profile</h2>
+    <p>Download our full company profile below:</p>
+    <a href="#" class="btn">Download PDF</a>
+</section>
+
+<section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <div class="contact">
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea placeholder="Message"></textarea>
+        <button class="btn">Send</button>
+
+        <p><b>Phone:</b> +211927852241</p>
+        <p><b>Email:</b> overcanengineering@gmail.com</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Overcan Engineering Solutions Ltd</p>
+</footer>
+
+<a href="https://wa.me/211927852241" class="whatsapp">💬</a>
+
+</body>
+</html>
